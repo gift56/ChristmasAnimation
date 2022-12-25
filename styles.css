@@ -103,4 +103,7 @@ body {
   .container .circle::before {
     background-size: 50%;
   }
+  .container .circle::after {
+    font-size: 2rem;
+  }
 }
