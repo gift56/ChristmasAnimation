@@ -68,6 +68,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.container .snow {
+  width: 100%;
+}
 .container .snow span {
   position: relative;
   min-width: 5px;
