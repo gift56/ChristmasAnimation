@@ -48,13 +48,23 @@ body {
   background-size: 650px;
   /* background-size: 50%; */
   background-position: center;
-  animation: move 500ms ease-in-out infinite;
+  animation: move 5s ease-in-out infinite;
 }
 @keyframes move {
   0% {
+    transform: translateY(-25px);
+  }
+  50% {
     transform: translateY(25px);
   }
-  50%{
-    transform: translateY();
-  }
+}
+.container .circle::after {
+  content: "Merry Christmas";
+  position: absolute;
+  inset: -125px -300px;
+  color: #fff;
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
