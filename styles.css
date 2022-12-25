@@ -51,7 +51,8 @@ body {
   animation: move 5s ease-in-out infinite;
 }
 @keyframes move {
-  0% {
+  0%,
+  100% {
     transform: translateY(-25px);
   }
   50% {
