@@ -62,7 +62,7 @@ body {
 .container .circle::after {
   content: "Merry Christmas";
   position: absolute;
-  inset: -125px -300px;
+  inset: -125px -200px;
   color: #fff;
   font-size: 4em;
   display: flex;
