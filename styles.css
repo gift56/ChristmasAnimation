@@ -22,7 +22,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 200px;
+  height: 160px;
   background: url(./image/tree.png);
   z-index: 1;
 }
@@ -59,7 +59,7 @@ body {
 .container .circle::after {
   content: "Merry Christmas";
   position: absolute;
-  inset: -125px -200px;
+  inset: -95px -200px;
   color: #fff;
   font-size: 4em;
   display: flex;
