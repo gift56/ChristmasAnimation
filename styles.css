@@ -26,3 +26,27 @@ body {
   background: url(./image/tree.png);
   z-index: 1;
 }
+.container .circle {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  /* width: 150px; */
+  height: 350px;
+  /* height: 150px; */
+  border-radius: 50%;
+  background-color: white;
+}
+.container .circle::before {
+  content: "";
+  position: absolute;
+  inset: -200px -300px;
+  background: url(./image/santa.png);
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 650px;
+  /* background-size: 50%; */
+  background-position: center;
+  animation: move 500ms ease-in-out infinite;
+}
