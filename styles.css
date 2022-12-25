@@ -9,5 +9,5 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient();
+  background: linear-gradient(#a2000a, #cf0000);
 }
