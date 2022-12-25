@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(#a2000a, #cf0000);
+  background: linear-gradient(#0c1436, #cf0000);
 }
 .container {
   width: 100%;
@@ -32,9 +32,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 350px;
-  /* width: 150px; */
   height: 350px;
-  /* height: 150px; */
   border-radius: 50%;
   background-color: white;
 }
@@ -46,7 +44,6 @@ body {
   z-index: 1;
   background-repeat: no-repeat;
   background-size: 650px;
-  /* background-size: 50%; */
   background-position: center;
   animation: move 5s ease-in-out infinite;
 }
@@ -71,6 +68,8 @@ body {
 }
 .container .snow {
   width: 100%;
+  position: relative;
+  display: flex;
 }
 .container .snow span {
   position: relative;
@@ -81,7 +80,11 @@ body {
   margin: 0 1vw;
   box-shadow: -100px 20px 5px #fff, 100px 20px 10px #fff;
   animation: snow 15s linear infinite;
-  animation-delay: calc(75s / var(--i));
+  animation-duration: calc(75s / var(--i));
+}
+.container .snow span:nth-child(even) {
+  min-width: 10px;
+  height: 10px;
 }
 
 @keyframes snow {
@@ -90,5 +93,14 @@ body {
   }
   100% {
     transform: translateY(100vh);
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .circle {
+    width: 150px;
+    height: 150px;
+  }
+  .container .circle::before {
+    background-size: 50%;
   }
 }
