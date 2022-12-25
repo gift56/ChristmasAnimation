@@ -50,3 +50,11 @@ body {
   background-position: center;
   animation: move 500ms ease-in-out infinite;
 }
+@keyframes move {
+  0% {
+    transform: translateY(25px);
+  }
+  50%{
+    transform: translateY();
+  }
+}
